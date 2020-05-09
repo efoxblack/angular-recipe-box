@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServicesComponent } from './components/services/services.component';
+import { FootersComponent } from './components/footers/footers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServicesComponent
+    FootersComponent
   ],
   imports: [
     BrowserModule,
