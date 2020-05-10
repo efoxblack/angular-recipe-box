@@ -13,7 +13,7 @@ const htmlOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class ServicesService {
+export class RecipesService {
 
   recipeUrl: string = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert";
 
