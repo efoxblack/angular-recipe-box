@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-recipe-box"
+    }
+  },
+  "defaultProject": "angular-recipe-box",
+  "cli": {
+    "analytics": false
+  }
 }
