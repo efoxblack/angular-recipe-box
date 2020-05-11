@@ -1,7 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { RecipesService } from '../services/recipes.service';
+import { Component, OnInit, Input} from '@angular/core';
+import { RECIPES } from '../models/mock-recipes';
 
-import { Recipe } from '../models/recipe';
 
 @Component({
   selector: 'app-cards',
@@ -10,13 +9,12 @@ import { Recipe } from '../models/recipe';
 })
 export class CardsComponent implements OnInit {
 
-  @Input() recipe: Recipe;
+  recipes = RECIPES;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 
 
 }
