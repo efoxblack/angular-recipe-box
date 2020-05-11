@@ -12,12 +12,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FootersComponent } from './components/footers/footers.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FootersComponent,
-    CardsComponent
+    CardsComponent,
+    HelloWorldComponent
   ],
   imports: [
     BrowserModule,
