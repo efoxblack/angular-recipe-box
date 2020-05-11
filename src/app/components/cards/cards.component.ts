@@ -1,6 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import { Recipe } from '../models/recipe';
 import { RECIPES } from '../models/mock-recipes';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-cards',
@@ -13,11 +14,13 @@ export class CardsComponent implements OnInit {
 
   selectedRecipe: Recipe
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
-
+  onOpen() {
+    // this.dialog.open();
+  }
 
 }
