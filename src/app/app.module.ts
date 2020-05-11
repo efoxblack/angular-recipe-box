@@ -11,25 +11,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FootersComponent } from './components/footers/footers.component';
 import { CardsComponent } from './components/cards/cards.component';
-<<<<<<< HEAD
-import { DemoComponent } from './demo/demo.component';
-=======
 import { CardDetailsComponent } from './components/card-details/card-details.component';
 import { PopUpService } from './components/services/pop-up.service';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
->>>>>>> 406df1e67f4846e074ddc36b0e5d338c3847b5b7
 
 @NgModule({
   declarations: [
     AppComponent,
     FootersComponent,
     CardsComponent,
-<<<<<<< HEAD
-    DemoComponent
-=======
     CardDetailsComponent,
     HelloWorldComponent
->>>>>>> 406df1e67f4846e074ddc36b0e5d338c3847b5b7
   ],
   imports: [
     BrowserModule,
