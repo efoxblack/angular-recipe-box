@@ -6,12 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './components/services/in-memory-data.service';
 
-
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { FootersComponent } from './components/footers/footers.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { CardDetailsComponent } from './components/card-details/card-details.component';
+import { PopUpService } from './components/services/pop-up.service';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 @NgModule({
@@ -19,6 +20,7 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
     AppComponent,
     FootersComponent,
     CardsComponent,
+    CardDetailsComponent,
     HelloWorldComponent
   ],
   imports: [
@@ -33,7 +35,7 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [],
+  providers: [PopUpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
